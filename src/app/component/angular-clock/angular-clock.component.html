@@ -1,0 +1,33 @@
+<div class="center">
+  <h1>timer watch</h1>
+</div>
+
+<div class="center mt-4">
+  <div class="col-12 col-md-4">
+<select name="seconds" id="seconds">
+    <option value="" name="" [(ngModel)] = "time.seconds">{{time.seconds}}</option>
+    </select>
+
+    <select name="minutes" id="minutes">
+    <option value="" name="" [(ngModel)] = "time.minutes">{{time.minutes}}</option>
+    </select>
+    
+    <select name="hours" id="hours">
+    <option value="" name="" [(ngModel)] = "time.hours" >{{time.hours}}</option>
+    </select>
+    
+
+  </div>
+</div>
+<!-- 
+<div class="center">
+  <div class="my-2 alert-info rounded p-2">
+    <button class="btn btn-primary m-2" (click)="()">Reset</button>
+    <button class="btn btn-danger m-2" (click)="('stop')">
+      Stop
+    </button>
+    <button class="btn btn-success m-2" (click)="('continue')">
+      {{ setTime === 0 ? "Start" : "Continue" }}
+    </button> -->
+  <!-- </div>
+</div> -->

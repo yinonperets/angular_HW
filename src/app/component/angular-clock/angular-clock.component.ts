@@ -6,14 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./angular-clock.component.css'],
 })
 export class AngularClockComponent {
- 
   interval: any;
   time: {
-    milliseconds: any;
     seconds: any;
     minutes: any;
     hours: any;
-  } = { milliseconds: 0, seconds: 0, minutes: 0, hours: 0 }
+  } = { seconds: 0, minutes: 0, hours: 0 }
   constructor() {
 
 
@@ -23,11 +21,9 @@ export class AngularClockComponent {
  
   }
     setTime(){
-    this.time.milliseconds++
-    if(this.time.milliseconds == 1000){ this.time.seconds++;
-     this.time.milliseconds == 0;}
-  if(this.time.seconds == 60){this.time.minutes++;
-  this.time.seconds == 0};
+    this.time.seconds++
+    if(this.time.seconds == 60){ this.time.minutes++};
+  if(this.time.minutes == 60){this.time.hours++};
 console.log(this.time);
 
   
